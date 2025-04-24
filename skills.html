@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills – Dolex's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Dolex's Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Skills Section -->
+  <section class="skills-section">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <i class="fas fa-chart-line"></i>
+          <h3>Crypto Growth Strategy</h3>
+          <p>Helping Web3 projects scale through trend-driven campaigns, community building, and content strategy.</p>
+        </div>
+        <div class="skill-box">
+          <i class="fas fa-users"></i>
+          <h3>Community Management</h3>
+          <p>Keeping online spaces loyal, buzzing, and self-sustaining across Telegram, Discord, and X (Twitter).</p>
+        </div>
+        <div class="skill-box">
+          <i class="fas fa-cogs"></i>
+          <h3>Project Management</h3>
+          <p>Executing Web3 projects from ideation to delivery through efficient planning, tools, and teamwork.</p>
+        </div>
+        <div class="skill-box">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Graphic Design & Art Illustration</h3>
+          <p>Designing striking visuals, brand kits, and custom NFT artwork that amplify digital identities.</p>
+        </div>
+        <div class="skill-box">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Creative Thinking</h3>
+          <p>Bringing fresh, unconventional solutions to branding, strategy, and storytelling.</p>
+        </div>
+        <div class="skill-box">
+          <i class="fas fa-chess-king"></i>
+          <h3>Leadership Skills</h3>
+          <p>Inspiring teams, guiding communities, and influencing positive action in digital ecosystems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.skill-box', {
+      reset: false,
+      distance: '50px',
+      duration: 1200,
+      easing: 'ease-out',
+      origin: 'bottom',
+      interval: 200
+    });
+
+    ScrollReveal().reveal('.section-title', {
+      delay: 100,
+      origin: 'top'
+    });
+  </script>
+</body>
+</html>

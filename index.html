@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dolex's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  
+</head>
+
+
+<header>
+  <nav class="navbar">
+    <h1 class="logo">Dolex's Portfolio</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section class="home">
+    <div class="home-container">
+      <div class="home-image">
+        <img src="profile.webp" alt="Dolex" />
+      </div>
+      <div class="home-content">
+        <h1>Hi, It's <span>Dolex</span></h1>
+        <h2>I'm <span class="typing"></span></h2>
+
+        <p>With 4+ years in crypto and digital innovation, I specialize in driving growth through creative vision and strategic execution.
+          As a Crypto Influencer, Project Manager, Growth Strategist, Community Manager, Graphic Designer, and Art Illustrator, I help projects build loyal communities, shape strong brand identities, and achieve measurable success.
+        </p>
+        <p>
+          Let's turn your vision into reality with precision, passion, and purpose. Click the botton below to connect with me today!
+        </p>
+
+        <a href="contact.html" class="btn">Hire Me</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="social-icons">
+      <a href="https://t.me/dolexclan" class="telegram-channel" title="Join Telegram Channel">
+        <i class="fab fa-telegram-plane"></i>
+      </a>
+      <a href="https://t.me/Officialdolex" title="Telegram">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="https://x.com/dolexcollab" title="X (Twitter)">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://discord.com/invite/uuVEqK9za" title="Discord">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://instagram.com/dolex_31" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </section>
+  
+  
+
+  <script>
+    const texts = ["a Crypto Influencer","a Project Manager", "a Growth Strategist", "a Comm. Manager", "a Graphic Designer", "an Art Illustrator"];
+    let count = 0;
+    let index = 0;
+    let currentText = "";
+    let letter = "";
+
+    (function type() {
+      if (count === texts.length) count = 0;
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+
+      document.querySelector(".typing").textContent = letter;
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 1000);
+      } else {
+        setTimeout(type, 150);
+      }
+    })();
+  </script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+
+    ScrollReveal().reveal('.home-content', { delay: 500, origin: 'right' });
+    ScrollReveal().reveal('.home-image', { delay: 600, origin: 'left' });
+    ScrollReveal().reveal('.navbar', { delay: 200, origin: 'top' });
+    ScrollReveal().reveal('.section-title', { delay: 300, origin: 'top' });
+    ScrollReveal().reveal('.service-box', { delay: 400, origin: 'bottom', interval: 200 });
+  </script>
+
+</body>
+</html>

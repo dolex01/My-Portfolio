@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Experience – Dolex's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Dolex's Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Experience Section -->
+  <section class="experience-section">
+    <div class="container">
+      <h2 class="section-title">My Experience</h2>
+
+      <div class="experience-box">
+        <div class="job-title">
+          <h3>Crypto Influencer & Growth Strategist</h3>
+          <span class="date">Jan 2020 – Present</span>
+        </div>
+        <p>
+          I specialize in growing Web3 projects through content creation, community engagement, and innovative strategies. I help brands build their audience, enhance loyalty, and increase conversions.
+        </p>
+      </div>
+
+      <div class="experience-box">
+        <div class="job-title">
+          <h3>Project Manager – Digital Innovation</h3>
+          <span class="date">Feb 2021 – Present</span>
+        </div>
+        <p>
+          As a Project Manager, I lead teams in the successful execution of digital innovation strategies, from concept to launch. I focus on optimizing workflow, meeting deadlines, and ensuring project success in a competitive digital landscape.
+        </p>
+      </div>
+
+      <div class="experience-box">
+        <div class="job-title">
+          <h3>Community Manager</h3>
+          <span class="date">March 2021 – Present</span>
+        </div>
+        <p>
+          I managed online communities on Telegram and Discord, building trust and engagement among community members. I provided support and feedback, facilitated discussions, and executed growth strategies for crypto communities.
+        </p>
+      </div>
+
+      <div class="experience-box">
+        <div class="job-title">
+          <h3>Graphic Designer & Art Illustrator</h3>
+          <span class="date">Aug 2019 – Present</span>
+        </div>
+        <p>
+          Creating unique graphic designs for various digital campaigns, including logo designs, social media graphics, NFT artworks, and more. I aim to deliver visually captivating content for both personal and professional brands.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Optional ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+    ScrollReveal().reveal('.section-title', { delay: 200, origin: 'top' });
+    ScrollReveal().reveal('.experience-box', { delay: 400, origin: 'bottom', interval: 200 });
+  </script>
+</body>
+</html>
+
+
+

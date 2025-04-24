@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | Dolex's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Dolex's Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="services">
+    <div class="section-title">
+      <h2>My Services</h2>
+      <p>Here’s what I bring to the table.</p>
+    </div>
+
+    <div class="services-container">
+      <div class="service-box">
+        <i class="fas fa-bullhorn service-icon"></i>
+        <h3>Crypto Influencing</h3>
+        <p>I help crypto projects build buzz, attract investors, and grow their audience through strategic content and outreach.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-cogs service-icon"></i>
+        <h3>Project Management</h3>
+        <p>From concept to launch, I manage workflows, deadlines, and teams to ensure project success.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-chart-line service-icon"></i>
+        <h3>Growth Strategy</h3>
+        <p>I craft actionable strategies to increase visibility, engagement, and user retention for digital products and communities.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-users service-icon"></i>
+        <h3>Community Management</h3>
+        <p>I build and manage vibrant online communities that stay loyal and engaged.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-paint-brush service-icon"></i>
+        <h3>Graphic Design</h3>
+        <p>From branding to banners, I design eye-catching visuals that reflect your brand’s identity.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-pen-nib service-icon"></i>
+        <h3>Art Illustration</h3>
+        <p>Custom illustrations that communicate your message with creativity and flair.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    // Initialize ScrollReveal
+    ScrollReveal({
+      reset: false,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+  
+    ScrollReveal().reveal('.section-title', { delay: 300, origin: 'top' });
+    ScrollReveal().reveal('.service-box', { delay: 400, origin: 'bottom', interval: 200 });
+
+    // Window load event to apply 'expanded' class for the pop-out effect
+    window.onload = function() {
+      // Select all service items
+      const serviceItems = document.querySelectorAll('.service-box');
+      
+      // Add the 'expanded' class to each service item
+      setTimeout(() => {
+        serviceItems.forEach(item => {
+          item.classList.add('expanded');
+        });
+      }, 100); // Small delay for better effect
+    };
+  </script>
+
+</body>
+</html>
